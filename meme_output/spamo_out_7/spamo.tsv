@@ -1,0 +1,7 @@
+prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
+meme.xml	CAAGGATKCCSTYATGGCYGTYCTGGAAGC	MEME-15	CAAGGATKCCSTYATGGCYGTYCTGGAAGC	meme.xml	GTTYATHCAYGATCCCHTSATCAAYYRGMS	MEME-13	GTTYATHCAYGATCCCHTSATCAAYYRGMS	0	0	.	.	.	3.46e-01	0	2	2	3	1.42e-06	1.28e-05
+meme.xml	CAAGGATKCCSTYATGGCYGTYCTGGAAGC	MEME-15	CAAGGATKCCSTYATGGCYGTYCTGGAAGC	meme.xml	GGAGAACHTMTGTCAGCAYTGSAWTGGAT	MEME-2	GGAGAACHTMTGTCAGCAYTGSAWTGGAT	0	0	.	.	.	1.78e+00	65	8	2	2	8.16e-03	7.11e-02
+
+# SpaMo (Spaced Motif Analysis Tool): Version 5.4.1 compiled on Dec 30 2021 at 18:23:42
+# The format of this file is described at https://meme-suite.org/meme/doc/spamo-output-format.html.
+# spamo -verbosity 1 -oc meme_output/spamo_out_7 -bgfile meme_output/background -keepprimary -primary CAAGGATKCCSTYATGGCYGTYCTGGAAGC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml

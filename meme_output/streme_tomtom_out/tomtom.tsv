@@ -1,0 +1,7 @@
+Query_ID	Target_ID	Optimal_offset	p-value	E-value	q-value	Overlap	Query_consensus	Target_consensus	Orientation
+5-ATCAACAACCAGCTC	MA0317.1	0	0.000323667	0.0579364	0.115805	8	ATCAACAACCAGCTC	ATAAACAA	+
+5-ATCAACAACCAGCTC	MA0402.1	-6	0.00404109	0.723355	0.722929	8	ATCAACAACCAGCTC	AACCAGCA	-
+
+# Tomtom (Motif Comparison Tool): Version 5.4.1 compiled on Dec 30 2021 at 18:23:44
+# The format of this file is described at https://meme-suite.org/meme/doc/tomtom-output-format.html.
+# tomtom -verbosity 1 -oc meme_output/streme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_output/streme_out/streme.xml JASPAR2022_CORE_fungi_non-redundant_pfms_meme.txt

@@ -1,0 +1,1388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:cis="http://zlab.bu.edu/schema/cisml" xmlns:fimo="http://noble.gs.washington.edu/schema/cisml" xmlns:mem="http://noble.gs.washington.edu/meme">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>FIMO Results</title>
+<style type="text/css">
+td.left {text-align: left;}
+td.right {text-align: right; padding-right: 1cm;}
+</style>
+</head>
+<body color="#000000">
+<a name="top_buttons"></a>
+<hr>
+<table summary="buttons" align="left" cellspacing="0">
+<tr>
+<td bgcolor="#00FFFF"><a href="#database_and_motifs"><b>Database and Motifs</b></a></td>
+<td bgcolor="#DDFFDD"><a href="#sec_i"><b>High-scoring Motif Occurences</b></a></td>
+<td bgcolor="#DDDDFF"><a href="#debugging_information"><b>Debugging Information</b></a></td>
+<td bgcolor="#FFDD00"><a href="fimo.tsv""><b>Results in TSV Format</b></a></td>
+<td bgcolor="#FFDDFF"><a href="fimo.gff""><b>Results in GFF3 Format</b></a></td>
+</tr>
+</table>
+<br/>
+<br/>
+<hr/>
+<center><big><b>FIMO - Motif search tool</b></big></center>
+<hr>
+<p>
+FIMO version 5.4.1, (Release date: Sat Aug 21 19:23:23 2021 -0700)
+</p>
+<p>
+For further information on how to interpret these results please access <a href="https://meme-suite.org/meme/doc/fimo-output-format.html">https://meme-suite.org/meme/doc/fimo-output-format.html</a>.<br>
+To get a copy of the FIMO software please access <a href="https://meme-suite.org">https://meme-suite.org</a>
+
+</p>
+<p>If you use FIMO in your research, please cite the following paper:<br>
+Charles E. Grant, Timothy L. Bailey, and William Stafford Noble,
+"FIMO: Scanning for occurrences of a given motif",
+<i>Bioinformatics</i>, <b>27</b>(7):1017-1018, 2011.
+<a href="http://bioinformatics.oxfordjournals.org/content/27/7/1017">[full text]</a></p>
+<hr>
+<center><big><b><a name="database_and_motifs">DATABASE AND MOTIFS</a></b></big></center>
+<hr>
+<div style="padding-left: 0.75in; line-height: 1em; font-family: monospace;">
+<p>
+  DATABASE meme_output/regulatory_regions.fasta
+  <br />
+  Database contains 27 sequences, 162027 residues
+</p>
+<p>
+  MOTIFS meme_output/meme_out/meme.xml (DNA)
+  <table>
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px dashed;">MOTIF</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;">WIDTH</th>
+        <th style="border-bottom: 1px dashed; padding-left: 1em;text-align:left;" >
+         BEST POSSIBLE MATCH
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align:right;">TYGAGGTYTTCGRATACGYYMTSGAYAAS</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">TCGAGGTCTTCGGATACGCCCTGGACAAC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGAGAACHTMTGTCAGCAYTGSAWTGGAT</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GGAGAACATCTGTCAGCATTGGATTGGAT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">TGGCATGAGCTCTGGCATGAAGGCTTGGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TYCATATCGMTTTCRGTGACTGCWTCGAG</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">TCCATATCGATTTCGGTGACTGCTTCGAG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TTRACTCSCATGYTGACHTTCGCCATGGA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">TTGACTCGCATGTTGACCTTCGCCATGGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GAYKAYGACAAYCTBACYCTSATGCARAA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GATTACGACAACCTCACCCTGATGCAAAA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">AYATGTGGATCAAATTTGCCAACCTCTGC</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">ACATGTGGATCAAATTTGCCAACCTCTGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CATYATGRAYAKTRTGCGDCAGCACAGYG</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">CATTATGGATAGTATGCGGCAGCACAGTG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGHGAYCAYDAYRTRGAGGGCATGTTTGC</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GGTGACCATAATGTGGAGGGCATGTTTGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GCCTGGCAYDCSTGGGCKYTGGCCAACTT</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GCCTGGCATTCCTGGGCTCTGGCCAACTT</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">RGATSTGTWYCRHGWTCTGTGGCWCAARA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GGATCTGTACCGTGTTCTGTGGCTCAAGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TYGAACRKCGBMYHATGCTGCAGATGGCG</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">TCGAACATCGTATCATGCTGCAGATGGCG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GTTYATHCAYGATCCCHTSATCAAYYRGMS</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">GTTCATTCACGATCCCTTGATCAACTGGCG</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GCTAYWTTCTGGGYCTGGGTGACCGWCAYC</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">GCTACATTCTGGGTCTGGGTGACCGACATC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CAAGGATKCCSTYATGGCYGTYCTGGAAGC</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">CAAGGATTCCCTTATGGCCGTTCTGGAAGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">YGATCRDGTSGACAARCTKCTCGCVCARGC</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">CGATCAAGTGGACAAACTTCTCGCCCAGGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">CSTACCAGAGTGGSARACCRATCATBMGGA</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">CCTACCAGAGTGGCAAACCAATCATCCGGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">TKCAGGTGSTTGCTCGGGTCAWGGAGAAGC</td>
+        <td style="text-align:right;padding-left: 1em;">30</td>
+        <td style="text-align:left;padding-left: 1em;">TGCAGGTGCTTGCTCGGGTCAAGGAGAAGC</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GGTCTKMTGGGMTGGGTCBVCAACAGYGA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GGTCTGCTGGGATGGGTCTGCAACAGCGA</td>
+       </tr>
+      <tr>
+        <td style="text-align:right;">GAYCTCAACMAAGCTTGGGATYTHTACTA</td>
+        <td style="text-align:right;padding-left: 1em;">29</td>
+        <td style="text-align:left;padding-left: 1em;">GATCTCAACCAAGCTTGGGATCTCTACTA</td>
+       </tr>
+    </tbody>
+  </table>
+</p>
+<p>
+Random model letter frequencies (meme_output/background):
+<br/>
+
+A 0.247 C 0.253 G 0.253 T 0.247 </p>
+</div>
+<hr>
+<center><big><b><a name="sec_i">SECTION I: HIGH-SCORING MOTIF OCCURENCES</a></b></big></center>
+<hr>
+<ul>
+<li>
+There were 101 motif occurences with a p-value less than 0.0001.
+
+The full set of motif occurences can be seen in the
+TSV (tab-delimited values) output file
+<a href="fimo.tsv">fimo.tsv</a>, 
+the GFF3 file 
+<a href="fimo.gff">fimo.gff</a> 
+which may be suitable for uploading to the 
+<a href="http://genome.ucsc.edu/cgi-bin/hgTables">UCSC Genome Table Browser</a>
+(assuming the FASTA input sequences included genomic coordinates in UCSC or Galaxy format),
+or the XML file 
+<a href="fimo.xml">fimo.xml</a>.
+</li>
+<li>
+The <i>p</i>-value of a motif occurrence is defined as the
+probability of a random sequence of the same length as the motif
+matching that position of the sequence with as good or better a score.
+</li>
+<li>
+The score for the match of a position in a sequence to a motif
+is computed by summing the appropriate entries from each column of
+the position-dependent scoring matrix that represents the motif.
+</li>
+<li>
+The q-value of a motif occurrence is defined as the
+false discovery rate if the occurrence is accepted as significant.
+</li>
+<li>The table is sorted by increasing <i>p</i>-value.</li>
+</ul>
+<table border="1">
+<thead>
+<tr>
+<th>Motif ID</th>
+<th>Alt ID</th>
+<th>Sequence Name</th>
+<th>Strand</th>
+<th>Start</th>
+<th>End</th>
+<th>p-value</th>
+<th>q-value</th>
+<th>Matched Sequence</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fischeri_NRRL_181_XP_001260509.1_NW_001509762.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1341</td>
+      <td style="text-align:left;">1369</td>
+      <td style="text-align:left;">2.89e-17</td>
+      <td style="text-align:left;">1.83e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_novofumigatus_IBT_16806_XP_024687432.1_NW_020194274.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1342</td>
+      <td style="text-align:left;">1370</td>
+      <td style="text-align:left;">2.89e-17</td>
+      <td style="text-align:left;">1.83e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_lentulus_XP_033412608.1_NW_022983875.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1342</td>
+      <td style="text-align:left;">1370</td>
+      <td style="text-align:left;">2.89e-17</td>
+      <td style="text-align:left;">1.83e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_udagawae_XP_043142437.1_NW_025091264.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1343</td>
+      <td style="text-align:left;">1371</td>
+      <td style="text-align:left;">2.89e-17</td>
+      <td style="text-align:left;">1.83e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_pseudoviridinutans_XP_043159434.1_NW_025091285.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1344</td>
+      <td style="text-align:left;">1372</td>
+      <td style="text-align:left;">2.89e-17</td>
+      <td style="text-align:left;">1.83e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1365</td>
+      <td style="text-align:left;">1393</td>
+      <td style="text-align:left;">1.78e-16</td>
+      <td style="text-align:left;">9.34e-12</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGCTCTGGCATGAGGGCTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1341</td>
+      <td style="text-align:left;">1369</td>
+      <td style="text-align:left;">7.87e-16</td>
+      <td style="text-align:left;">3.55e-11</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAACTCTGGCATGAAGGGTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fusarium_coffeatum_XP_031016261.1_NW_022157912.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1326</td>
+      <td style="text-align:left;">1354</td>
+      <td style="text-align:left;">2.39e-15</td>
+      <td style="text-align:left;">9.42e-11</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGCTTTGGCATGAAGGTCTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Drechmeria_coniospora_XP_040655901.1_NC_054390.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1303</td>
+      <td style="text-align:left;">1331</td>
+      <td style="text-align:left;">1.22e-14</td>
+      <td style="text-align:left;">4.29e-10</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGCTCTGGCACGAGGGGTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">816</td>
+      <td style="text-align:left;">844</td>
+      <td style="text-align:left;">8.33e-14</td>
+      <td style="text-align:left;">2.63e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGATGTGGCACGAAGGCCTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">926</td>
+      <td style="text-align:left;">954</td>
+      <td style="text-align:left;">2.26e-13</td>
+      <td style="text-align:left;">6.47e-09</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGATGTGGCATGAGGGTCTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1318</td>
+      <td style="text-align:left;">1346</td>
+      <td style="text-align:left;">3.96e-13</td>
+      <td style="text-align:left;">1.04e-08</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGCAATGGCATGAAGGTCTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_saccharolyticus_JOP_1030-1_XP_025433557.1_NW_020290617.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">765976</td>
+      <td style="text-align:left;">766004</td>
+      <td style="text-align:left;">2.58e-11</td>
+      <td style="text-align:left;">6.25e-07</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGTTGCGGCAGGTAGGTCTTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_960570.2_NC_026506.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">966</td>
+      <td style="text-align:left;">994</td>
+      <td style="text-align:left;">2.93e-11</td>
+      <td style="text-align:left;">6.59e-07</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGTTGTGGCACGAGGCCCTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_nidulans_FGSC_A4_XP_663586.1_NT_107009.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">610606</td>
+      <td style="text-align:left;">610634</td>
+      <td style="text-align:left;">5.1e-11</td>
+      <td style="text-align:left;">1.07e-06</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATCAGCTTAGGCAGGTAGGCTTTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2650170</td>
+      <td style="text-align:left;">2650198</td>
+      <td style="text-align:left;">1.14e-09</td>
+      <td style="text-align:left;">2.24e-05</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGCTGCGGGAGGTAATTTCGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">131108</td>
+      <td style="text-align:left;">131136</td>
+      <td style="text-align:left;">1.02e-08</td>
+      <td style="text-align:left;">0.000189</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATTAGCTGCGGGAGGTAATTTCTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2881171</td>
+      <td style="text-align:left;">2881199</td>
+      <td style="text-align:left;">6.13e-08</td>
+      <td style="text-align:left;">0.00107</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTCATGATCGCCGCCAGCAAGGCGTTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003321789.2_NW_003526554.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1435984</td>
+      <td style="text-align:left;">1436012</td>
+      <td style="text-align:left;">1.27e-07</td>
+      <td style="text-align:left;">0.00211</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCCTTGATAGATGCCAGGACGGCCTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fischeri_NRRL_181_XP_001260509.1_NW_001509762.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1353</td>
+      <td style="text-align:left;">1381</td>
+      <td style="text-align:left;">2.46e-07</td>
+      <td style="text-align:left;">0.00337</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGCTTGGAGGAAGCCTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_novofumigatus_IBT_16806_XP_024687432.1_NW_020194274.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1354</td>
+      <td style="text-align:left;">1382</td>
+      <td style="text-align:left;">2.46e-07</td>
+      <td style="text-align:left;">0.00337</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGCTTGGAGGAAGCCTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_udagawae_XP_043142437.1_NW_025091264.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1355</td>
+      <td style="text-align:left;">1383</td>
+      <td style="text-align:left;">2.46e-07</td>
+      <td style="text-align:left;">0.00337</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGCTTGGAGGAAGCCTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_pseudoviridinutans_XP_043159434.1_NW_025091285.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1356</td>
+      <td style="text-align:left;">1384</td>
+      <td style="text-align:left;">2.46e-07</td>
+      <td style="text-align:left;">0.00337</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGCTTGGAGGAAGCCTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1377</td>
+      <td style="text-align:left;">1405</td>
+      <td style="text-align:left;">2.82e-07</td>
+      <td style="text-align:left;">0.0037</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAGGGCTTGGAGGAAGCTTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5060</td>
+      <td style="text-align:left;">5088</td>
+      <td style="text-align:left;">5.66e-07</td>
+      <td style="text-align:left;">0.00713</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTTATAAAAGATGGCGCGAGGGGCAGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">714810</td>
+      <td style="text-align:left;">714838</td>
+      <td style="text-align:left;">5.88e-07</td>
+      <td style="text-align:left;">0.00713</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGCAATAGCGATTGGTCGTAGTGTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1330722</td>
+      <td style="text-align:left;">1330750</td>
+      <td style="text-align:left;">8.07e-07</td>
+      <td style="text-align:left;">0.00943</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTAATGAACGATTTCAGGTAGCCATAGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_versicolor_CBS_583.65_XP_040666988.1_NW_024467527.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">622458</td>
+      <td style="text-align:left;">622486</td>
+      <td style="text-align:left;">1.34e-06</td>
+      <td style="text-align:left;">0.0147</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACTGGGGCTGACTTGGGGGCAGGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Blastomyces_gilchristii_SLH14081_XP_031579958.1_NW_003101666.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1524</td>
+      <td style="text-align:left;">1552</td>
+      <td style="text-align:left;">1.35e-06</td>
+      <td style="text-align:left;">0.0147</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGCGGTTGACTCTGCCTGGAAGGTTGGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1411</td>
+      <td style="text-align:left;">1439</td>
+      <td style="text-align:left;">1.77e-06</td>
+      <td style="text-align:left;">0.0186</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGCATGATATGCTCGACCAAGGCCCAGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_lentulus_XP_033412608.1_NW_022983875.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1354</td>
+      <td style="text-align:left;">1382</td>
+      <td style="text-align:left;">2.63e-06</td>
+      <td style="text-align:left;">0.0268</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGCTTGGAAGAAGCCTCTCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1353</td>
+      <td style="text-align:left;">1381</td>
+      <td style="text-align:left;">2.91e-06</td>
+      <td style="text-align:left;">0.0287</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGGTTGGAGGAAGCCTCTAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coprinopsis_cinerea_okayama7#130_XP_001831347.2_NW_003307538.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1354438</td>
+      <td style="text-align:left;">1354466</td>
+      <td style="text-align:left;">3.16e-06</td>
+      <td style="text-align:left;">0.0302</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCCATGGTATTCGGTTCGTGGTCGTGGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_960307.2_NC_026506.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">122</td>
+      <td style="text-align:left;">150</td>
+      <td style="text-align:left;">4.26e-06</td>
+      <td style="text-align:left;">0.0395</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGTTTCGTCAGAGCCATGAAATTTCTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">131492</td>
+      <td style="text-align:left;">131520</td>
+      <td style="text-align:left;">5.06e-06</td>
+      <td style="text-align:left;">0.0456</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACGCAAGATATTCTGCATCAAGGTATGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Drechmeria_coniospora_XP_040655901.1_NC_054390.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1315</td>
+      <td style="text-align:left;">1343</td>
+      <td style="text-align:left;">6.09e-06</td>
+      <td style="text-align:left;">0.0533</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGGGGTTGGAGGAAGCATCCCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">131840</td>
+      <td style="text-align:left;">131868</td>
+      <td style="text-align:left;">6.38e-06</td>
+      <td style="text-align:left;">0.0537</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGAATCATGGCTGCCAGGTACTTTTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2650902</td>
+      <td style="text-align:left;">2650930</td>
+      <td style="text-align:left;">6.47e-06</td>
+      <td style="text-align:left;">0.0537</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGGATCATGGCTGCCAGGTACTTTTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">3478</td>
+      <td style="text-align:left;">3506</td>
+      <td style="text-align:left;">7.31e-06</td>
+      <td style="text-align:left;">0.0591</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTGATGGGATCATGGATGGGGAGTTGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">4121</td>
+      <td style="text-align:left;">4149</td>
+      <td style="text-align:left;">8.84e-06</td>
+      <td style="text-align:left;">0.0697</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCCATTGTCAAAGACATGAAGCGTCGCT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">525</td>
+      <td style="text-align:left;">553</td>
+      <td style="text-align:left;">9.97e-06</td>
+      <td style="text-align:left;">0.0767</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCCATGAGCACTGGGTTCACGGACCTGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_960570.2_NC_026506.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">978</td>
+      <td style="text-align:left;">1006</td>
+      <td style="text-align:left;">1.03e-05</td>
+      <td style="text-align:left;">0.0776</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCACGAGGCCCTCGAGGAAGCTTCGCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">884</td>
+      <td style="text-align:left;">912</td>
+      <td style="text-align:left;">1.17e-05</td>
+      <td style="text-align:left;">0.0845</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGCATGATTGCTTGCTTGGAGCCTTTGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">131720</td>
+      <td style="text-align:left;">131748</td>
+      <td style="text-align:left;">1.18e-05</td>
+      <td style="text-align:left;">0.0845</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCAATAATCTCTGGGAGGAAGGCTCGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2650554</td>
+      <td style="text-align:left;">2650582</td>
+      <td style="text-align:left;">1.25e-05</td>
+      <td style="text-align:left;">0.0877</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">ACGCAATATATTCTGCATCAAGGTATGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">647</td>
+      <td style="text-align:left;">675</td>
+      <td style="text-align:left;">1.31e-05</td>
+      <td style="text-align:left;">0.0901</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTTACGGATGTTTTCACTAGGGGTTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1507</td>
+      <td style="text-align:left;">1535</td>
+      <td style="text-align:left;">1.56e-05</td>
+      <td style="text-align:left;">0.105</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGCGCAGGCGTTTGGACGTGACCTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coprinopsis_cinerea_okayama7#130_XP_001831347.2_NW_003307538.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1359915</td>
+      <td style="text-align:left;">1359943</td>
+      <td style="text-align:left;">1.76e-05</td>
+      <td style="text-align:left;">0.114</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTCTTGAAGATCGACATGATGGCTTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Ceraceosorus_guamensis_XP_025370199.1_NW_020290018.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">17907</td>
+      <td style="text-align:left;">17935</td>
+      <td style="text-align:left;">1.78e-05</td>
+      <td style="text-align:left;">0.114</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGCAGCGAATTCGGCTCGAGGTTCTTGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2882623</td>
+      <td style="text-align:left;">2882651</td>
+      <td style="text-align:left;">1.97e-05</td>
+      <td style="text-align:left;">0.122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTCATGAGCTTGTCGAGAACGTCGTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2883592</td>
+      <td style="text-align:left;">2883620</td>
+      <td style="text-align:left;">1.97e-05</td>
+      <td style="text-align:left;">0.122</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGTATGATCTGCGGCAGGAAGTTGACGC</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">4181</td>
+      <td style="text-align:left;">4209</td>
+      <td style="text-align:left;">2.49e-05</td>
+      <td style="text-align:left;">0.149</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGTATGGTCTCCGGAATGAATTGTTCGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1332596</td>
+      <td style="text-align:left;">1332624</td>
+      <td style="text-align:left;">2.51e-05</td>
+      <td style="text-align:left;">0.149</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CATCATGATCGACTCCAGGAAAGGCTTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1483</td>
+      <td style="text-align:left;">1511</td>
+      <td style="text-align:left;">2.61e-05</td>
+      <td style="text-align:left;">0.152</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGCGCAGGCGTTTGGACGGGATCTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2881985</td>
+      <td style="text-align:left;">2882013</td>
+      <td style="text-align:left;">2.64e-05</td>
+      <td style="text-align:left;">0.152</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGCTATGGGCAATCGTATGAAGCCCTACA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2882002</td>
+      <td style="text-align:left;">2882030</td>
+      <td style="text-align:left;">2.7e-05</td>
+      <td style="text-align:left;">0.152</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGCAAGGATCTGTTCGATGTAGGGCTTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">713467</td>
+      <td style="text-align:left;">713495</td>
+      <td style="text-align:left;">2.75e-05</td>
+      <td style="text-align:left;">0.152</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCTTGTGATCTTGCATGAGGCTGAAAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2645452</td>
+      <td style="text-align:left;">2645480</td>
+      <td style="text-align:left;">2.84e-05</td>
+      <td style="text-align:left;">0.155</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTCTTGACCGTCGGTGCGTAGGTCTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Drechmeria_coniospora_XP_040655901.1_NC_054390.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1396</td>
+      <td style="text-align:left;">1424</td>
+      <td style="text-align:left;">3.31e-05</td>
+      <td style="text-align:left;">0.176</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGCACGATCTGCTCGAGCGAGGCCCCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">711710</td>
+      <td style="text-align:left;">711738</td>
+      <td style="text-align:left;">3.34e-05</td>
+      <td style="text-align:left;">0.176</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGCTATGAAATCAGACATCTGGCTCTTGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">130265</td>
+      <td style="text-align:left;">130293</td>
+      <td style="text-align:left;">4.15e-05</td>
+      <td style="text-align:left;">0.215</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGTTTGATGGGCGGGATGTAGTGAGCCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fusarium_coffeatum_XP_031016261.1_NW_022157912.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1338</td>
+      <td style="text-align:left;">1366</td>
+      <td style="text-align:left;">4.24e-05</td>
+      <td style="text-align:left;">0.215</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGAAGGTCTGGAAGAAGCTTCACG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_saccharolyticus_JOP_1030-1_XP_025433557.1_NW_020290617.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">766588</td>
+      <td style="text-align:left;">766616</td>
+      <td style="text-align:left;">4.29e-05</td>
+      <td style="text-align:left;">0.215</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCGATGATCTCTGGAAGAAAAGCCCGTA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_versicolor_CBS_583.65_XP_040666988.1_NW_024467527.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">626740</td>
+      <td style="text-align:left;">626768</td>
+      <td style="text-align:left;">4.66e-05</td>
+      <td style="text-align:left;">0.226</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGCTTGATTGGTGGTATGTAATGAGCCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">3171</td>
+      <td style="text-align:left;">3199</td>
+      <td style="text-align:left;">4.72e-05</td>
+      <td style="text-align:left;">0.226</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCAATCAGTGCCGCTATGGAAGATTTCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">126401</td>
+      <td style="text-align:left;">126429</td>
+      <td style="text-align:left;">4.74e-05</td>
+      <td style="text-align:left;">0.226</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCTCTTGACCGTTGGTGCGTAGGCCATGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1738</td>
+      <td style="text-align:left;">1766</td>
+      <td style="text-align:left;">4.8e-05</td>
+      <td style="text-align:left;">0.226</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGCCAAAGGTGTGACAGGAAATCGTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">713455</td>
+      <td style="text-align:left;">713483</td>
+      <td style="text-align:left;">4.96e-05</td>
+      <td style="text-align:left;">0.228</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TAGCTATTGGTATGGCTTGTGATCTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003321789.2_NW_003526554.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1432087</td>
+      <td style="text-align:left;">1432115</td>
+      <td style="text-align:left;">4.98e-05</td>
+      <td style="text-align:left;">0.228</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGTACAAGCTGCGCGGTCCCGGCTTGGT</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Ceraceosorus_guamensis_XP_025370199.1_NW_020290018.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">19156</td>
+      <td style="text-align:left;">19184</td>
+      <td style="text-align:left;">5.13e-05</td>
+      <td style="text-align:left;">0.231</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCGCTGAGATCCGCCTCGCAGTTCCAGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Ceraceosorus_guamensis_XP_025370199.1_NW_020290018.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">15280</td>
+      <td style="text-align:left;">15308</td>
+      <td style="text-align:left;">5.28e-05</td>
+      <td style="text-align:left;">0.232</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCAAGGGTGGATGATGGCAAGCCTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Drechmeria_coniospora_XP_040655901.1_NC_054390.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5959</td>
+      <td style="text-align:left;">5987</td>
+      <td style="text-align:left;">5.3e-05</td>
+      <td style="text-align:left;">0.232</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCTGTGAACTACTCAACGTTGTTTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2509</td>
+      <td style="text-align:left;">2537</td>
+      <td style="text-align:left;">5.43e-05</td>
+      <td style="text-align:left;">0.235</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTCGTTTTCATCGGCACGCAGCCTCCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coprinopsis_cinerea_okayama7#130_XP_001831347.2_NW_003307538.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1359420</td>
+      <td style="text-align:left;">1359448</td>
+      <td style="text-align:left;">5.72e-05</td>
+      <td style="text-align:left;">0.243</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGCATGAGCTCTTGGACGTGGGGCATAG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1590</td>
+      <td style="text-align:left;">1618</td>
+      <td style="text-align:left;">5.82e-05</td>
+      <td style="text-align:left;">0.243</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGACACAAACAGTTTCAAGAGACGCTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">897</td>
+      <td style="text-align:left;">925</td>
+      <td style="text-align:left;">5.87e-05</td>
+      <td style="text-align:left;">0.243</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGCTTGGAGCCTTTGCATGACATGCTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">3549</td>
+      <td style="text-align:left;">3577</td>
+      <td style="text-align:left;">6.39e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCATGTAACCATGCATCAAGTTATCAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1331738</td>
+      <td style="text-align:left;">1331766</td>
+      <td style="text-align:left;">6.44e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGTGTCGCTGTCAGGCAGGAGAGCCTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2881352</td>
+      <td style="text-align:left;">2881380</td>
+      <td style="text-align:left;">6.46e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGATCGAAATGAGTCGGGAAGGTATGCG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">4716</td>
+      <td style="text-align:left;">4744</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCAAACAGATGCTGCATCGGGGGTGGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_versicolor_CBS_583.65_XP_040666988.1_NW_024467527.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">625477</td>
+      <td style="text-align:left;">625505</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCAAGGACGTTTTCATAAAGCTCGTAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1333958</td>
+      <td style="text-align:left;">1333986</td>
+      <td style="text-align:left;">6.7e-05</td>
+      <td style="text-align:left;">0.258</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTGCATGAGGTCAGGTACGTGCGGCATGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">861</td>
+      <td style="text-align:left;">889</td>
+      <td style="text-align:left;">6.98e-05</td>
+      <td style="text-align:left;">0.265</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTCGGTGAGAGATGTTAGGAGGTGGCTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2882691</td>
+      <td style="text-align:left;">2882719</td>
+      <td style="text-align:left;">7.17e-05</td>
+      <td style="text-align:left;">0.269</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GTGCTCGAGAACCTTCACGAGCGTTTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">234</td>
+      <td style="text-align:left;">262</td>
+      <td style="text-align:left;">7.77e-05</td>
+      <td style="text-align:left;">0.286</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGAACAAACGGTTACTCGGATGTCAGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">5743</td>
+      <td style="text-align:left;">5771</td>
+      <td style="text-align:left;">7.8e-05</td>
+      <td style="text-align:left;">0.286</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGGACGAACGCTGGAAGCATTGTTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">144</td>
+      <td style="text-align:left;">172</td>
+      <td style="text-align:left;">8.02e-05</td>
+      <td style="text-align:left;">0.289</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGATCGACTTCCTGGGCGTAGGTAGCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1332155</td>
+      <td style="text-align:left;">1332183</td>
+      <td style="text-align:left;">8.18e-05</td>
+      <td style="text-align:left;">0.289</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTCATGAGAGATCCGTGAATAGCCTCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_fischeri_NRRL_181_XP_001260509.1_NW_001509762.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1483</td>
+      <td style="text-align:left;">1511</td>
+      <td style="text-align:left;">8.25e-05</td>
+      <td style="text-align:left;">0.289</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCGCGCAGGCGTTTGGACGGGATCTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_lentulus_XP_033412608.1_NW_022983875.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1484</td>
+      <td style="text-align:left;">1512</td>
+      <td style="text-align:left;">8.25e-05</td>
+      <td style="text-align:left;">0.289</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TCGCGCAGGCGTTTGGACGGGATCTTGCA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_960307.2_NC_026506.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2069</td>
+      <td style="text-align:left;">2097</td>
+      <td style="text-align:left;">8.38e-05</td>
+      <td style="text-align:left;">0.29</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGTGGTGGCGGCGGCTGGTCGGCGGAGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fusarium_coffeatum_XP_031016261.1_NW_022157912.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2730</td>
+      <td style="text-align:left;">2758</td>
+      <td style="text-align:left;">8.89e-05</td>
+      <td style="text-align:left;">0.299</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTTTGGATGGATGGTTCGGGGGCGTTGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fusarium_coffeatum_XP_031016261.1_NW_022157912.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">2339</td>
+      <td style="text-align:left;">2367</td>
+      <td style="text-align:left;">8.92e-05</td>
+      <td style="text-align:left;">0.299</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TTGTTTCGAGGTTGCCATGAAGCGAGAGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_nidulans_FGSC_A4_XP_663586.1_NT_107009.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">611338</td>
+      <td style="text-align:left;">611366</td>
+      <td style="text-align:left;">8.92e-05</td>
+      <td style="text-align:left;">0.299</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGAATGAGATTTGCAAGGTACTTCTTAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1334198</td>
+      <td style="text-align:left;">1334226</td>
+      <td style="text-align:left;">9.17e-05</td>
+      <td style="text-align:left;">0.304</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGCTTGATCTTGCGCCTGTAGGGATCGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">472</td>
+      <td style="text-align:left;">500</td>
+      <td style="text-align:left;">9.25e-05</td>
+      <td style="text-align:left;">0.304</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGCAAGAGAGCCAGTGGGAAGGACAACA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">2650782</td>
+      <td style="text-align:left;">2650810</td>
+      <td style="text-align:left;">9.62e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">CTCAATAATCTCCGGAAGGAAGGCTCGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">+</td>
+      <td style="text-align:left;">1324</td>
+      <td style="text-align:left;">1352</td>
+      <td style="text-align:left;">9.65e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGTCGCCGGCGGAAGGATGATGGGCAGGA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Fusarium_coffeatum_XP_031016261.1_NW_022157912.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">4829</td>
+      <td style="text-align:left;">4857</td>
+      <td style="text-align:left;">9.88e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">TGGAAGGATCGACGGGTTGTTGTTGTGAA</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">3430</td>
+      <td style="text-align:left;">3458</td>
+      <td style="text-align:left;">9.92e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">AGGCACGAGTTTTTCCTTGTATGAGTCGG</td>
+   </tr>
+    <tr>
+      <td style="text-align:left;">TGGCAYGARCTSTGGCABGAAGGYYTGGA</td>
+      <td style="text-align:left;">MEME-3</td>
+      <td style="text-align:left;">Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003321789.2_NW_003526554.1</td>
+      <td style="text-align:center;">-</td>
+      <td style="text-align:left;">1436185</td>
+      <td style="text-align:left;">1436213</td>
+      <td style="text-align:left;">9.92e-05</td>
+      <td style="text-align:left;">0.31</td>
+      <td style="text-align:left;font-size:x-large;font-family:monospace;">GGGCAATAGAGGAGGGATGAACCGTGCCA</td>
+   </tr>
+</tbody>
+</table>
+
+<hr>
+<center><big><b><a name="debugging_information">DEBUGGING INFORMATION</a></b></big></center>
+<hr>
+<p>
+Command line:
+</p>
+<pre>
+fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_5 --bgfile meme_output/background --motif TGGCAYGARCTSTGGCABGAAGGYYTGGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+</pre>
+<p>
+Settings:
+</p>
+<pre>
+<table>
+  <tr>
+    <td style="padding-right: 2em">output_directory = meme_output/fimo_out_5</td>
+    <td style="padding-left: 5em; padding-right: 2em">MEME file name = meme_output/meme_out/meme.xml</td>
+    <td style="padding-left: 5em; padding-right: 2em">sequence file name = meme_output/regulatory_regions.fasta</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">background file name = meme_output/background</td>
+    <td style="padding-left: 5em; padding-right: 2em">alphabet = DNA</td>
+    <td style="padding-left: 5em; padding-right: 2em">max stored scores = 100000</td>
+  </tr>  <tr>
+    <td style="padding-right: 2em">allow clobber = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">compute q-values = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">parse genomic coord. = true</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">text only = false</td>
+    <td style="padding-left: 5em; padding-right: 2em">scan both strands = true</td>
+    <td style="padding-left: 5em; padding-right: 2em">max strand = false</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">threshold type = p-value</td>
+    <td style="padding-left: 5em; padding-right: 2em">output theshold = 0.0001</td>
+    <td style="padding-left: 5em; padding-right: 2em">pseudocount = 0.1</td>
+  </tr>
+  <tr>
+    <td style="padding-right: 2em">alpha = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em">verbosity = 1</td>
+    <td style="padding-left: 5em; padding-right: 2em"></td>
+  </tr>
+
+</table>
+</pre>
+<p>
+This information can be useful in the event you wish to report a
+problem with the FIMO software.
+</p>
+<hr>
+<span style="background-color: #DDDDFF"><a href="#top_buttons"><b>Go to top</b></a></span>
+</body>
+</html>

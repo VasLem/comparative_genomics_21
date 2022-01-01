@@ -1,0 +1,202 @@
+Invoking:
+  getsize meme_output/regulatory_regions.fasta 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.003854
+Invoking:
+  fasta-most -min 50 < meme_output/regulatory_regions.fasta 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.038905
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 2 meme_output/regulatory_regions.fasta meme_output/background
+Finished invoke:
+  name: bg  status: 0  time: 0.004002
+Invoking:
+  meme meme_output/regulatory_regions.fasta -oc meme_output/meme_out -mod oops -nmotifs 20 -minw 8 -maxw 30 -bfile meme_output/background -dna -p 4 -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 1353.310344
+Invoking:
+  streme --verbosity 1 --oc meme_output/streme_out -dna --p meme_output/regulatory_regions.fasta --minw 8 --maxw 30 --order 2
+Finished invoke:
+  name: streme  status: 0  time: 7.969486
+Invoking:
+  centrimo -seqlen 6001 -verbosity 1 -oc meme_output/centrimo_out -bfile meme_output/background meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml JASPAR2022_CORE_fungi_non-redundant_pfms_meme.txt
+Finished invoke:
+  name: centrimo  status: 0  time: 1.151657
+Invoking:
+  tomtom -verbosity 1 -oc meme_output/meme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_output/meme_out/meme.xml JASPAR2022_CORE_fungi_non-redundant_pfms_meme.txt
+Finished invoke:
+  name: meme_tomtom  status: 0  time: 25.556003
+Invoking:
+  tomtom -verbosity 1 -oc meme_output/streme_tomtom_out -min-overlap 5 -dist pearson -evalue -thresh 1 -no-ssc meme_output/streme_out/streme.xml JASPAR2022_CORE_fungi_non-redundant_pfms_meme.txt
+Finished invoke:
+  name: streme_tomtom  status: 0  time: 1.128484
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 meme_output/combined.meme meme_output/combined.meme 1> meme_output/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 10.049637
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_1 -bgfile meme_output/background -keepprimary -primary TYGAGGTYTTCGRATACGYYMTSGAYAAS meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo1  status: 0  time: 0.299643
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_2 -bgfile meme_output/background -keepprimary -primary TYCATATCGMTTTCRGTGACTGCWTCGAG meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo2  status: 0  time: 0.295093
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_3 -bgfile meme_output/background -keepprimary -primary GTTYATHCAYGATCCCHTSATCAAYYRGMS meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo3  status: 0  time: 0.297783
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_4 -bgfile meme_output/background -keepprimary -primary GAYKAYGACAAYCTBACYCTSATGCARAA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo4  status: 0  time: 0.302173
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_5 -bgfile meme_output/background -keepprimary -primary TGGCAYGARCTSTGGCABGAAGGYYTGGA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo5  status: 0  time: 0.330191
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_6 -bgfile meme_output/background -keepprimary -primary GGAGAACHTMTGTCAGCAYTGSAWTGGAT meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo6  status: 0  time: 0.414522
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_7 -bgfile meme_output/background -keepprimary -primary CAAGGATKCCSTYATGGCYGTYCTGGAAGC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo7  status: 0  time: 0.325293
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_8 -bgfile meme_output/background -keepprimary -primary TTRACTCSCATGYTGACHTTCGCCATGGA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo8  status: 0  time: 0.311688
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_9 -bgfile meme_output/background -keepprimary -primary GCTAYWTTCTGGGYCTGGGTGACCGWCAYC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo9  status: 0  time: 0.297732
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_10 -bgfile meme_output/background -keepprimary -primary AYATGTGGATCAAATTTGCCAACCTCTGC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo10  status: 0  time: 0.296571
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_11 -bgfile meme_output/background -keepprimary -primary GCCTGGCAYDCSTGGGCKYTGGCCAACTT meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo11  status: 0  time: 0.29721
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_12 -bgfile meme_output/background -keepprimary -primary CATYATGRAYAKTRTGCGDCAGCACAGYG meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo12  status: 0  time: 0.331359
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_13 -bgfile meme_output/background -keepprimary -primary GGHGAYCAYDAYRTRGAGGGCATGTTTGC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo13  status: 0  time: 0.30407
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_14 -bgfile meme_output/background -keepprimary -primary RGATSTGTWYCRHGWTCTGTGGCWCAARA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo14  status: 0  time: 0.304199
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_15 -bgfile meme_output/background -keepprimary -primary YGATCRDGTSGACAARCTKCTCGCVCARGC meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo15  status: 0  time: 0.317431
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_16 -bgfile meme_output/background -keepprimary -primary CSTACCAGAGTGGSARACCRATCATBMGGA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo16  status: 0  time: 0.300484
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_17 -bgfile meme_output/background -keepprimary -primary GGTCTKMTGGGMTGGGTCBVCAACAGYGA meme_output/regulatory_regions.fasta meme_output/meme_out/meme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo17  status: 0  time: 0.306878
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_18 -bgfile meme_output/background -keepprimary -primary 2-ACTACGACTA meme_output/regulatory_regions.fasta meme_output/streme_out/streme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo18  status: 0  time: 0.215736
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_19 -bgfile meme_output/background -keepprimary -primary 4-CTGCATGACWCKCTCRTC meme_output/regulatory_regions.fasta meme_output/streme_out/streme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo19  status: 0  time: 0.216444
+Invoking:
+  spamo -verbosity 1 -oc meme_output/spamo_out_20 -bgfile meme_output/background -keepprimary -primary 5-ATCAACAACCAGCTC meme_output/regulatory_regions.fasta meme_output/streme_out/streme.xml meme_output/meme_out/meme.xml meme_output/streme_out/streme.xml
+Finished invoke:
+  name: spamo20  status: 0  time: 0.228673
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_1 --bgfile meme_output/background --motif TYGAGGTYTTCGRATACGYYMTSGAYAAS meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo1  status: 0  time: 0.174089
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_2 --bgfile meme_output/background --motif TYCATATCGMTTTCRGTGACTGCWTCGAG meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo2  status: 0  time: 0.154893
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_3 --bgfile meme_output/background --motif GTTYATHCAYGATCCCHTSATCAAYYRGMS meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo3  status: 0  time: 0.148047
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_4 --bgfile meme_output/background --motif GAYKAYGACAAYCTBACYCTSATGCARAA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo4  status: 0  time: 0.147496
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_5 --bgfile meme_output/background --motif TGGCAYGARCTSTGGCABGAAGGYYTGGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo5  status: 0  time: 0.146917
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_6 --bgfile meme_output/background --motif GGAGAACHTMTGTCAGCAYTGSAWTGGAT meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo6  status: 0  time: 0.15557
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_7 --bgfile meme_output/background --motif CAAGGATKCCSTYATGGCYGTYCTGGAAGC meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo7  status: 0  time: 0.151249
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_8 --bgfile meme_output/background --motif TTRACTCSCATGYTGACHTTCGCCATGGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo8  status: 0  time: 0.149298
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_9 --bgfile meme_output/background --motif GCTAYWTTCTGGGYCTGGGTGACCGWCAYC meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo9  status: 0  time: 0.153012
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_10 --bgfile meme_output/background --motif AYATGTGGATCAAATTTGCCAACCTCTGC meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo10  status: 0  time: 0.157406
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_11 --bgfile meme_output/background --motif GCCTGGCAYDCSTGGGCKYTGGCCAACTT meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo11  status: 0  time: 0.150115
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_12 --bgfile meme_output/background --motif CATYATGRAYAKTRTGCGDCAGCACAGYG meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo12  status: 0  time: 0.152936
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_13 --bgfile meme_output/background --motif GGHGAYCAYDAYRTRGAGGGCATGTTTGC meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo13  status: 0  time: 0.149186
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_14 --bgfile meme_output/background --motif RGATSTGTWYCRHGWTCTGTGGCWCAARA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo14  status: 0  time: 0.155821
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_15 --bgfile meme_output/background --motif YGATCRDGTSGACAARCTKCTCGCVCARGC meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo15  status: 0  time: 0.149724
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_16 --bgfile meme_output/background --motif CSTACCAGAGTGGSARACCRATCATBMGGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo16  status: 0  time: 0.152168
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_17 --bgfile meme_output/background --motif GGTCTKMTGGGMTGGGTCBVCAACAGYGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo17  status: 0  time: 0.153268
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_18 --bgfile meme_output/background --motif 2-ACTACGACTA meme_output/streme_out/streme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo18  status: 0  time: 0.062648
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_19 --bgfile meme_output/background --motif 4-CTGCATGACWCKCTCRTC meme_output/streme_out/streme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo19  status: 0  time: 0.071023
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_20 --bgfile meme_output/background --motif 5-ATCAACAACCAGCTC meme_output/streme_out/streme.xml meme_output/regulatory_regions.fasta
+Finished invoke:
+  name: fimo20  status: 0  time: 0.065219
+Writing output
+Invoking:
+  meme-chip_html_to_tsv meme_output/meme-chip.html meme_output/summary.tsv "meme-chip regulatory_regions.fasta -db JASPAR2022_CORE_fungi_non-redundant_pfms_meme.txt -minw 8 -maxw 30 -oc meme_output -dna -meme-nmotifs 20 --ccut 0 -meme-p 4 -meme-mod oops" 5.4.1 "Sat Aug 21 19\:23\:23 2021 -0700"
+Finished invoke:
+  name: summary  status: 0  time: 0.087956
+Done

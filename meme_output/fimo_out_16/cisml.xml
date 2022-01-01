@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc meme_output/fimo_out_16 --bgfile meme_output/background --motif CSTACCAGAGTGGSARACCRATCATBMGGA meme_output/meme_out/meme.xml meme_output/regulatory_regions.fasta</command-line>
+<pattern-file>meme_output/meme_out/meme.xml</pattern-file>
+<sequence-file>meme_output/regulatory_regions.fasta</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="CSTACCAGAGTGGSARACCRATCATBMGGA" name="MEME-17">
+<scanned-sequence accession="Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003321789.2_NW_003526554.1" name="Puccinia_graminis_f._sp._tritici_CRL_75-36-700-3_XP_003321789.2_NW_003526554.1">
+<matched-element start="1434088" stop="1434117" score="17.1319" pvalue="3.35e-07">
+<sequence>GCTATCAAATCAGAAAGACGGTCAGGAGAA</sequence>
+<mem:qvalue>0.00534</mem:qvalue>
+</matched-element>
+<matched-element start="1436968" stop="1436939" score="5.65934" pvalue="3.35e-05">
+<sequence>TTCCTTAGATTGGGCACGATATAAGCCGGA</sequence>
+<mem:qvalue>0.334</mem:qvalue>
+</matched-element>
+<matched-element start="1436849" stop="1436820" score="3.47253" pvalue="6.69e-05">
+<sequence>ATTATTAGGGTGGGCCAAAAATCGATCAAA</sequence>
+<mem:qvalue>0.474</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Neurospora_crassa_OR74A_XP_960570.2_NC_026506.1" name="Neurospora_crassa_OR74A_XP_960570.2_NC_026506.1">
+<matched-element start="1327" stop="1356" score="21.3407" pvalue="3.39e-08">
+<sequence>CGTACCGCAGTGGCCAGGAGGTTGTTAGGA</sequence>
+<mem:qvalue>0.000719</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Neurospora_crassa_OR74A_XP_960307.2_NC_026506.1" name="Neurospora_crassa_OR74A_XP_960307.2_NC_026506.1">
+<matched-element start="1129" stop="1158" score="5.3956" pvalue="3.65e-05">
+<sequence>CGTACCTGACCAAACAAGCTGTCGTTAGAA</sequence>
+<mem:qvalue>0.342</mem:qvalue>
+</matched-element>
+<matched-element start="1643" stop="1614" score="4.20879" pvalue="5.33e-05">
+<sequence>CTCACAAAGTCGGCCATAGTGCGGGCTGAG</sequence>
+<mem:qvalue>0.403</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1" name="Neurospora_crassa_OR74A_XP_958289.2_NC_026505.1">
+<matched-element start="4991" stop="5020" score="16.1538" pvalue="5.4e-07">
+<sequence>CCCGCAACAGTGGGACAACTATCGGTACGA</sequence>
+<mem:qvalue>0.00781</mem:qvalue>
+</matched-element>
+<matched-element start="2964" stop="2993" score="2.23077" pvalue="9.71e-05">
+<sequence>TGTCCTAAATTTTCAAACAATTTACTGGGA</sequence>
+<mem:qvalue>0.607</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1" name="Acaromyces_ingoldii_XP_025379417.1_NW_020290248.1">
+<matched-element start="2881829" stop="2881858" score="12.6154" pvalue="2.6e-06">
+<sequence>CGTCCCTGTGCTGGCAACCTATGACCCGAC</sequence>
+<mem:qvalue>0.0345</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1" name="Amorphotheca_resinae_ATCC_22711_XP_024719697.1_NW_020194478.1">
+<matched-element start="1679" stop="1708" score="35.4066" pvalue="1.64e-13">
+<sequence>CTTATCAAAGTGGCAAACCAGTCATCCGGA</sequence>
+<mem:qvalue>6.52e-09</mem:qvalue>
+</matched-element>
+<matched-element start="1587" stop="1616" score="3.06593" pvalue="7.57e-05">
+<sequence>GCGCCAACTGCCGCAACTCAATAATTTGGA</sequence>
+<mem:qvalue>0.513</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_fischeri_NRRL_181_XP_001260509.1_NW_001509762.1" name="Aspergillus_fischeri_NRRL_181_XP_001260509.1_NW_001509762.1">
+<matched-element start="1702" stop="1731" score="41.6374" pvalue="1.8e-18">
+<sequence>CCTACCAGAGTGGCAGACCAATCATCCGGA</sequence>
+<mem:qvalue>1.91e-13</mem:qvalue>
+</matched-element>
+<matched-element start="5133" stop="5104" score="4.6044" pvalue="4.71e-05">
+<sequence>CGTCCCACTTCGAGCGCACGGCCAGCCGGA</sequence>
+<mem:qvalue>0.375</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1" name="Aspergillus_fumigatus_Af293_XP_755360.1_NC_007195.1">
+<matched-element start="1702" stop="1731" score="40.1978" pvalue="6e-17">
+<sequence>CCTACCAAAGTGGCAGACCAATCATCCGGA</sequence>
+<mem:qvalue>3.82e-12</mem:qvalue>
+</matched-element>
+<matched-element start="5129" stop="5100" score="4.6044" pvalue="4.71e-05">
+<sequence>CGTCCCACTTCGAGCGCACGGCCAGCCGGA</sequence>
+<mem:qvalue>0.375</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_lentulus_XP_033412608.1_NW_022983875.1" name="Aspergillus_lentulus_XP_033412608.1_NW_022983875.1">
+<matched-element start="1703" stop="1732" score="41.6374" pvalue="1.8e-18">
+<sequence>CCTACCAGAGTGGCAGACCAATCATCCGGA</sequence>
+<mem:qvalue>1.91e-13</mem:qvalue>
+</matched-element>
+<matched-element start="5132" stop="5103" score="4.6044" pvalue="4.71e-05">
+<sequence>CGTCCCACTTCGAGCGCACGGCCAGCCGGA</sequence>
+<mem:qvalue>0.375</mem:qvalue>
+</matched-element>
+<matched-element start="4859" stop="4830" score="2.59341" pvalue="8.72e-05">
+<sequence>CCGATAATGCCAGGGTGACGGTGGTCAGGA</sequence>
+<mem:qvalue>0.567</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_nidulans_FGSC_A4_XP_663586.1_NT_107009.1" name="Aspergillus_nidulans_FGSC_A4_XP_663586.1_NT_107009.1">
+<matched-element start="609130" stop="609159" score="16.5934" pvalue="4.37e-07">
+<sequence>GCTCCAGGGCTTGAAGTCGAATAATGTGGA</sequence>
+<mem:qvalue>0.00662</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_novofumigatus_IBT_16806_XP_024687432.1_NW_020194274.1" name="Aspergillus_novofumigatus_IBT_16806_XP_024687432.1_NW_020194274.1">
+<matched-element start="1703" stop="1732" score="41.8022" pvalue="8.89e-19">
+<sequence>CCTACCAGAGTGGCAAACCAATCATCCGGA</sequence>
+<mem:qvalue>1.91e-13</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_pseudoviridinutans_XP_043159434.1_NW_025091285.1" name="Aspergillus_pseudoviridinutans_XP_043159434.1_NW_025091285.1">
+<matched-element start="1705" stop="1734" score="40.4286" pvalue="3.49e-17">
+<sequence>CCTACCAGAGTGGCAGACCAATCATCCGAA</sequence>
+<mem:qvalue>2.78e-12</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1" name="Aspergillus_ruber_CBS_135680_XP_040634151.1_NW_024467345.1">
+<matched-element start="1726" stop="1755" score="34.4505" pvalue="5.41e-13">
+<sequence>CCTACCAGAGTGGTAGACCCATCATTCGGA</sequence>
+<mem:qvalue>1.91e-08</mem:qvalue>
+</matched-element>
+<matched-element start="2778" stop="2749" score="4.79121" pvalue="4.44e-05">
+<sequence>CCTTCAAGAATGGAAGGACGGCGGGGACGG</sequence>
+<mem:qvalue>0.375</mem:qvalue>
+</matched-element>
+<matched-element start="1650" stop="1621" score="2.47253" pvalue="9.04e-05">
+<sequence>ACTGCGGGAGCTGGCGACTGATCTTCCGGA</sequence>
+<mem:qvalue>0.576</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_saccharolyticus_JOP_1030-1_XP_025433557.1_NW_020290617.1" name="Aspergillus_saccharolyticus_JOP_1030-1_XP_025433557.1_NW_020290617.1">
+<matched-element start="761746" stop="761775" score="20.011" pvalue="7.32e-08">
+<sequence>TGAACAAGGTTGGCAAGCCTTTGATTAGAA</sequence>
+<mem:qvalue>0.00146</mem:qvalue>
+</matched-element>
+<matched-element start="766097" stop="766068" score="4.06593" pvalue="5.57e-05">
+<sequence>ATAGCCAGAGTTGCTAGCCAGTTGTCCCAG</sequence>
+<mem:qvalue>0.403</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1" name="Aspergillus_thermomutatus_XP_026617391.1_NW_020798072.1">
+<matched-element start="126049" stop="126078" score="19.1868" pvalue="1.15e-07">
+<sequence>CGGACCATATCGGCAATTCGTTTGTTGGAA</sequence>
+<mem:qvalue>0.00204</mem:qvalue>
+</matched-element>
+<matched-element start="128171" stop="128200" score="5.10989" pvalue="4.01e-05">
+<sequence>TGTTCCAATGTGGAATGCTTGCAATCAGGA</sequence>
+<mem:qvalue>0.354</mem:qvalue>
+</matched-element>
+<matched-element start="130737" stop="130708" score="3.05495" pvalue="7.6e-05">
+<sequence>ACGATCAAATTTGCGATCCAGCGACCACAA</sequence>
+<mem:qvalue>0.513</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_udagawae_XP_043142437.1_NW_025091264.1" name="Aspergillus_udagawae_XP_043142437.1_NW_025091264.1">
+<matched-element start="1704" stop="1733" score="38.8791" pvalue="8.37e-16">
+<sequence>CTTACCAGAGTGGCAGACCAATCATCCGAA</sequence>
+<mem:qvalue>3.81e-11</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_versicolor_CBS_583.65_XP_040666988.1_NW_024467527.1" name="Aspergillus_versicolor_CBS_583.65_XP_040666988.1_NW_024467527.1">
+<matched-element start="626142" stop="626171" score="12.3626" pvalue="2.89e-06">
+<sequence>ACTTCTGGGCTTGAAGTCAAATAATGTGGA</sequence>
+<mem:qvalue>0.0368</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1" name="Aspergillus_viridinutans_XP_043121874.1_NW_025091217.1">
+<matched-element start="2645100" stop="2645129" score="23.5165" pvalue="8.65e-09">
+<sequence>CGGACCATATCGGCAATCCGTTTATTGGAA</sequence>
+<mem:qvalue>0.000212</mem:qvalue>
+</matched-element>
+<matched-element start="2647567" stop="2647538" score="9.35165" pvalue="9.32e-06">
+<sequence>CCGCCTGGATCGGTCAATAAATGTTTCGGA</sequence>
+<mem:qvalue>0.11</mem:qvalue>
+</matched-element>
+<matched-element start="2647246" stop="2647275" score="5.32967" pvalue="3.73e-05">
+<sequence>TGTTCCACTGTGGAATGCTTGCTATCAGGA</sequence>
+<mem:qvalue>0.342</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1" name="Batrachochytrium_dendrobatidis_JAM81_XP_006680416.1_NW_006281107.1">
+<matched-element start="712861" stop="712890" score="5.72527" pvalue="3.28e-05">
+<sequence>TGCATCGTATCTGGCTATCCATTATTAAGC</sequence>
+<mem:qvalue>0.334</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Blastomyces_gilchristii_SLH14081_XP_031579958.1_NW_003101666.1" name="Blastomyces_gilchristii_SLH14081_XP_031579958.1_NW_003101666.1">
+<matched-element start="5784" stop="5755" score="23.1099" pvalue="1.13e-08">
+<sequence>CTTACAGTGGTGGAATCCCAGTGGTGCGGA</sequence>
+<mem:qvalue>0.000257</mem:qvalue>
+</matched-element>
+<matched-element start="4457" stop="4486" score="7.43956" pvalue="1.84e-05">
+<sequence>TATGTCAAATCTGTCATCCAATCGTTCAGC</sequence>
+<mem:qvalue>0.203</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Ceraceosorus_guamensis_XP_025370199.1_NW_020290018.1" name="Ceraceosorus_guamensis_XP_025370199.1_NW_020290018.1">
+<matched-element start="20230" stop="20259" score="19.1978" pvalue="1.15e-07">
+<sequence>GCTTCCATACTTGGAGGACGACGAGGCGGA</sequence>
+<mem:qvalue>0.00204</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1" name="Coniophora_puteana_RWD-64-598_SS2_XP_007770990.1_NW_006913061.1">
+<matched-element start="1337" stop="1366" score="39.3297" pvalue="3.39e-16">
+<sequence>CGTACCAGAGTGGGAAACCAATCGTCCGGA</sequence>
+<mem:qvalue>1.8e-11</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Coprinopsis_cinerea_okayama7#130_XP_001831347.2_NW_003307538.1" name="Coprinopsis_cinerea_okayama7#130_XP_001831347.2_NW_003307538.1">
+<matched-element start="1357650" stop="1357621" score="14.5055" pvalue="1.15e-06">
+<sequence>GGTCTCGGAGTGGCAGCAATATGTTGTCGA</sequence>
+<mem:qvalue>0.016</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1" name="Dichomitus_squalens_LYAD-421_SS1_XP_007363197.1_NW_006766887.1">
+<matched-element start="1333266" stop="1333295" score="17.5495" pvalue="2.72e-07">
+<sequence>ACTACCATACTTGGACCAGGACCATCCCGA</sequence>
+<mem:qvalue>0.00456</mem:qvalue>
+</matched-element>
+<matched-element start="1333352" stop="1333381" score="11.5275" pvalue="4.05e-06">
+<sequence>GCTACCAGGCTAGCAACCACTCTATCGAGA</sequence>
+<mem:qvalue>0.0496</mem:qvalue>
+</matched-element>
+<matched-element start="1333643" stop="1333614" score="6.68132" pvalue="2.39e-05">
+<sequence>TGTGCATGGCCAGACGACCAATCAGTGCGA</sequence>
+<mem:qvalue>0.254</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Drechmeria_coniospora_XP_040655901.1_NC_054390.1" name="Drechmeria_coniospora_XP_040655901.1_NC_054390.1">
+<matched-element start="1664" stop="1693" score="30.2967" pvalue="4.32e-11">
+<sequence>CGTACAAGAGCGGCCAGCCGGTCATCAAGA</sequence>
+<mem:qvalue>1.37e-06</mem:qvalue>
+</matched-element>
+<matched-element start="3977" stop="3948" score="9.05495" pvalue="1.04e-05">
+<sequence>CGCACATGAGTGGCAACGGCACGACCAAGA</sequence>
+<mem:qvalue>0.118</mem:qvalue>
+</matched-element>
+<matched-element start="5923" stop="5894" score="4.14286" pvalue="5.44e-05">
+<sequence>CCGTCCGGGGCGGGCCGACGGCGTGGGGAA</sequence>
+<mem:qvalue>0.403</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1" name="Fibroporia_radiculosa_XP_012179871.1_NW_012133290.1">
+<matched-element start="1447" stop="1476" score="24.5385" pvalue="4.34e-09">
+<sequence>CATATCAAAGTGGGCGACCGGTTGTCACGA</sequence>
+<mem:qvalue>0.000115</mem:qvalue>
+</matched-element>
+<matched-element start="5460" stop="5431" score="3" pvalue="7.72e-05">
+<sequence>AGGACCGCAGCTGGCAAAAGATGTTGAGTA</sequence>
+<mem:qvalue>0.513</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="Fusarium_coffeatum_XP_031016261.1_NW_022157912.1" name="Fusarium_coffeatum_XP_031016261.1_NW_022157912.1">
+<matched-element start="1687" stop="1716" score="30.1319" pvalue="5.03e-11">
+<sequence>CGTACAAGAGTGGACAGCCAATTGTGCAGA</sequence>
+<mem:qvalue>1.46e-06</mem:qvalue>
+</matched-element>
+<matched-element start="5340" stop="5311" score="5.30769" pvalue="3.76e-05">
+<sequence>AGCTCTGGGTCGGGCGGCGCATCGGCGGGA</sequence>
+<mem:qvalue>0.342</mem:qvalue>
+</matched-element>
+<matched-element start="1570" stop="1599" score="4.17582" pvalue="5.38e-05">
+<sequence>ACTACCAGGTCTTCCGCAGAATTAGCAGAC</sequence>
+<mem:qvalue>0.403</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

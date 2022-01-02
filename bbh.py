@@ -45,6 +45,16 @@ def find_inparalogs(self_df, df):
     return df
 
 def main():
+    if not os.path.isfile('query_puccinia_graminis.out'):
+        os.system('makeblastdb -in neurospora_crassa.fasta -parse_seqids -blastdb_version 5 -title "Neurospora Crassa" -dbtype prot')
+        os.system('blastp -db neurospora_crassa.fasta -query puccinia_graminis.fasta -max_target_seqs 1 -outfmt 6 -out query_puccinia_graminis.out')
+    if not os.path.isfile('query_neurospora_crassa.out'):
+        os.system('makeblastdb -in puccinia_graminis.fasta -parse_seqids -blastdb_version 5 -title "Puccinia Graninis" -dbtype prot')
+        os.system('blastp -db puccinia_graminis.fasta -query neurospora_crassa.fasta -max_target_seqs 1 -outfmt 6 -out query_neurospora_crassa.out ')
+    if not os.path.isfile('self_puccinia_graminis.out'):
+        os.system('blastp -db puccinia_graminis.fasta -query puccinia_graminis.fasta -max_target_seqs 2 -outfmt 6  -out self_puccinia_graminis.out')
+    if not os.path.isfile('self_neurospora_crassa.out'):
+        os.system('blastp -db neurospora_crassa.fasta -query neurospora_crassa.fasta -max_target_seqs 2 -outfmt 6  -out self_neurospora_crassa.out')
     q_puccinia = preprocess_cross_blast(load_df('query_puccinia_graminis.out'))
     s_puccinia = preprocess_self_blast(load_df('self_puccinia_graminis.out'))
     puccinia_df = find_inparalogs(s_puccinia, q_puccinia)
